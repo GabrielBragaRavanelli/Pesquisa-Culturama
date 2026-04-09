@@ -15,35 +15,35 @@
         <form action="#" method="get">
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                    <label for="username">Nome</label>
-                    <input type="text" name="username" required>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
                     <br>
-                    <label for="userage">Idade</label>
-                    <input type="number" name="age" min="12" max="100" required>
+                    <label for="age">Idade</label>
+                    <input type="number" name="age" id="age" min="12" max="100" required>
                     <br>
                     <label for="birthdate">Data de Nascimento</label>
-                    <input type="date" name="birthdate">
+                    <input type="date" name="birthdate" id="birthdate">
                     <br>
-                    <label for="useremail">Email</label>
-                    <input type="email" name="useremail" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
                     <br>
-                    <label for="usertel">Telefone</label>
-                    <input type="tel" name="usertel" pattern="[0-9] {11}" placeholder="(xx)xxxxx-xxxx">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" name="usertel" id="tel" pattern="[0-9] {11}" placeholder="(xx)xxxxx-xxxx">
                     <br>
-                    <label for="userimage">Upload de Foto</label>
-                    <input type="file" accept="image/*" name="userimage"> 
+                    <label for="image">Upload de Foto</label>
+                    <input type="file" accept="image/*" name="image" id="image"> 
             </fieldset>
 
             <fieldset>
                 <legend>Perfil</legend>
-                    <input type="radio" name="usergender" value="Feminino">
-                    <label for="usergender">Feminino</label>
+                    <input type="radio" name="fem" value="Feminino" id="fem">
+                    <label for="fem">Feminino</label>
 
-                    <input type="radio" name="usergender" value="Masculino">
-                    <label for="usergender">Masculino</label>
+                    <input type="radio" name="masc" value="Masculino" id="masc">
+                    <label for="masc">Masculino</label>
 
-                    <input type="radio" name="usergender" value="notinform">
-                    <label for="usergender">Prefiro não informar</label>
+                    <input type="radio" name="notinform" value="notinform" id="notinform">
+                    <label for="notinform">Prefiro não informar</label>
                     <br>
 
                     <label for="maritalstatus">Estado Civil</label>
@@ -96,6 +96,19 @@
                         <input type="text" name="usercity" id="usercity" placeholder="Digite sua cidade">
             </fieldset>
 
+            <fieldset>
+                <legend>Hábitos</legend>
+                    <p>Redes Sociais</p>
+
+                <input type="checkbox" name="insta" value="instagram" id="insta">
+                <label for="insta">Instagram</label>
+                <br>
+                <input type="checkbox" name="face" value="facebook" id="face">
+                <label for="face">Facebook</label>
+                <br>
+                <input type="checkbox" name="link" value="linkedin" id="link">
+                <label for="link">Linkedin</label>
+            </fieldset>
 
             <button type="submit">Enviar</button>
         </form>
