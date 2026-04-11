@@ -108,6 +108,37 @@
                 <br>
                 <input type="checkbox" name="link" value="linkedin" id="link">
                 <label for="link">Linkedin</label>
+                <br>
+                <label for="musicstyle">Estilo Musical</label>
+                <input type="text" id="musicstyle" name="usermusicStyle">
+                <datalist id="styletype">
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Samba">Samba</option>
+                        <option value="Sertaneijo">Sertaneijo</option>
+                </datalist>
+                <br>
+                <label for="favoriteColor">Cor Favorita</label>
+                <input type="color" name="userfavoritecolor" id="favoriteColor">
+            </fieldset>
+            <fieldset>
+                <legend>Opinião</legend>
+                <p>O que você acha da qualidade do nosso serviço?</p>
+                <br>
+                <input type="radio" id="noteexcellent" name="ótimo" value="ótimo">
+                <label for="noteexcellent">Ótimo</label>
+                <br>
+                <input type="radio" id="notegreat" name="great" value="boa">
+                <label for="notegreat">Boa</label>
+                <br>
+                <input type="radio" id="noteRegular" name="regular" value="regular">
+                <label for="noteRegular">Regular</label>
+                <br>
+                <input type="radio"  id="notebad" name="ruim" value="ruim">
+                <label for="notebad">Ruim</label>
+                <br>
+                <label for="comment">Escreva a sua opinião</label>
+                <textarea name="userComment" id="comment">Digite aqui...</textarea>
             </fieldset>
 
             <button type="submit">Enviar</button>
